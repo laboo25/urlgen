@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic URL Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Dynamic URL Generator</h1>
+    
+    <label for="baseUrl">Enter Base URL (use {count} for dynamic position):</label>
+    <input type="text" id="baseUrl" placeholder="https://www.zzup.com/MTAwNjA=/showimage/zzup-8769086487/image{count}-5896498214-1-9689595623/zzupm223716411/9879560327/zzup.com.jpg">
+    
+    <div class="number-inputs">
+      <label for="startNumber">Starting Number (e.g., 1 or 3):</label>
+    <input type="number" id="startNumber" placeholder="1" min="0">
+    
+    <label for="endNumber">End Number (e.g., 30):</label>
+    <input type="number" id="endNumber" placeholder="30" min="1">
+    </div>
+    
+    <button id="generateButton">Generate URLs</button>
+    
+    <textarea id="output" placeholder="Generated URLs will appear here..."></textarea>
+    
+    <h2>Image Previews</h2>
+    <div id="imagePreviews" class="previews"></div>
+    
+    <button id="downloadButton">Download URLs as Text File</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
